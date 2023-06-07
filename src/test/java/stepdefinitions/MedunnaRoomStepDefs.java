@@ -11,6 +11,8 @@ public class MedunnaRoomStepDefs {
 
     MedunnaHomePage medunnaHomePage = new MedunnaHomePage();
     MedunnaRoomPage medunnaRoomPage = new MedunnaRoomPage();
+    public static int roomNumberFaker;
+    public static String roomId;
 
     @When("Click on ItemsAndTitles")
     public void click_on_ıtems_and_titles() {
@@ -29,7 +31,7 @@ public class MedunnaRoomStepDefs {
 
     @When("enter {string} room number input")
     public void enter_room_number_input(String roomNumber) {
-        int roomNumberFaker = Faker.instance().number().numberBetween(100000,1000000);
+        roomNumberFaker = Faker.instance().number().numberBetween(100000,1000000);
 
         medunnaRoomPage.roomNumberInput.sendKeys(roomNumberFaker+"");
     }
@@ -55,8 +57,13 @@ public class MedunnaRoomStepDefs {
     }
 
     @When("click on Save button")
-    public void click_on_save_button() {
+    public void click_on_save_button() throws InterruptedException {
         medunnaRoomPage.saveSubmitButton.click();
+        Thread.sleep(1000);
+
+        roomId = medunnaRoomPage.alert.getText().replaceAll("[^0-9]","");
+        System.out.println("roomId = " + roomId);
+
     }
 
     @When("close the application")
