@@ -26,7 +26,7 @@ public class ApiRoomStepDefs {
 
         //Send the request and get the response
         response = given(spec).get("{first}/{second}");
-        response.prettyPrint();
+        //response.prettyPrint();
 
     }
     @Then("validate body")
@@ -57,7 +57,7 @@ public class ApiRoomStepDefs {
 
         //Send the request and get the response
         response = given(spec).get("{first}/{second}/{third}");
-        response.prettyPrint();
+        //response.prettyPrint();
 
 
     }

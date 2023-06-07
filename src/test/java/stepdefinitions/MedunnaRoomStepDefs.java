@@ -62,7 +62,7 @@ public class MedunnaRoomStepDefs {
         Thread.sleep(1000);
 
         roomId = medunnaRoomPage.alert.getText().replaceAll("[^0-9]","");
-        System.out.println("roomId = " + roomId);
+        //System.out.println("roomId = " + roomId);
 
     }
 
