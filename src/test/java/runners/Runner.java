@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/endtoend_features",
+        features = "src/test/resources",
         glue = {"stepdefinitions","hooks"},
-        tags = "@e2e",//Çalışacak scenarioları belirtir.
+        tags = "@create_room",//Çalışacak scenarioları belirtir.
         dryRun = false
 
 )

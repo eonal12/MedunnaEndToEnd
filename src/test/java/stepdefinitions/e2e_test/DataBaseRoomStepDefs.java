@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.e2e_test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,7 +7,7 @@ import pojos.RoomPojo;
 
 import java.sql.*;
 
-import static stepdefinitions.MedunnaRoomStepDefs.roomNumberFaker;
+import static stepdefinitions.e2e_test.MedunnaRoomStepDefs.roomNumberFaker;
 
 public class DataBaseRoomStepDefs {
 

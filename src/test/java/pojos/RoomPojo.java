@@ -62,6 +62,15 @@ public class RoomPojo {
     public void setDescription(String description) {
         this.description = description;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "RoomPojo{" +
+                "roomNumber=" + roomNumber +
+                ", roomType='" + roomType + '\'' +
+                ", status=" + status +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

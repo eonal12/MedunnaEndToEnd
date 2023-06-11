@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.e2e_test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;

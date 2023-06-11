@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.e2e_test;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.When;
