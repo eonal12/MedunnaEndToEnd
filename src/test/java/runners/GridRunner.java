@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources",
         glue = {"stepdefinitions","hooks"},
-        tags = "@e2e",//Çalışacak scenarioları belirtir.
+        tags = "@grid_features",//Çalışacak scenarioları belirtir.
         dryRun = false
 
 )
-public class Runner {
+public class GridRunner {
 }
